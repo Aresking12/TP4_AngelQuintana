@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Pokémon</title>
+    <link rel="stylesheet" href="/statics/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><button>⬅️ Inicio</button></a>
+    </nav>
+    <header>
+        <h2>Consulta Pokémon 👾</h2>
+        <p>Datos proporcionados por PokéAPI.</p>
+    </header>
+
+    <main>
+        <section class="formulario-api">
+            <label for="pokemon-input">Ingresa nombre o ID de Pokémon:</label>
+            <input type="text" id="pokemon-input" placeholder="Ej: pikachu o 25">
+            <button onclick="buscarPokemon()">Buscar Pokémon</button>
+        </section>
+
+        <section id="resultado-pokemon" class="resultados-api">
+            <img id="pokemon-imagen" src="" alt="Imagen de Pokémon" style="width: 150px;">
+            <h3 id="pokemon-nombre"></h3>
+            <p><strong>Tipo(s):</strong> <span id="pokemon-tipo"></span></p>
+            <p><strong>Peso:</strong> <span id="pokemon-peso"></span></p>
+        </section>
+    </main>
+    
+    <script src="/js/pokemon.js"></script>
+</body>
+</html>

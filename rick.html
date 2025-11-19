@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API de Rick & Morty</title>
+    <link rel="stylesheet" href="/statics/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><button>⬅️ Inicio</button></a>
+    </nav>
+    <header>
+        <h2>Personajes de Rick & Morty 🧪</h2>
+        <p>Datos proporcionados por The Rick and Morty API.</p>
+    </header>
+
+    <main>
+        <section class="formulario-api">
+            <label for="personaje-id">Ingresa el ID del personaje:</label>
+            <input type="number" id="personaje-id" min="1" placeholder="Ej: 1">
+            <button onclick="buscarPersonaje()">Buscar Personaje</button>
+        </section>
+
+        <section id="resultado-rick" class="resultados-api">
+            <img id="rick-imagen" src="" alt="Imagen del personaje" style="width: 200px;">
+            <h3 id="rick-nombre"></h3>
+            <p><strong>Estado:</strong> <span id="rick-estado"></span></p>
+            <p><strong>Especie:</strong> <span id="rick-especie"></span></p>
+        </section>
+    </main>
+
+    <script src="/js/rick.js"></script>
+</body>
+</html>
