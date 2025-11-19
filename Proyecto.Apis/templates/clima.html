@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API del Clima</title>
+    <link rel="stylesheet" href="/statics/styles.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html"><button>⬅️ Inicio</button></a> 
+    </nav>
+    <header>
+        <h2>Consulta del Clima ☀️</h2>
+        <p>Datos proporcionados por OpenWeather.</p>
+    </header>
+    
+    <main>
+        <section class="formulario-api">
+            <label for="ciudad">Ingresa una ciudad:</label>
+            <input type="text" id="ciudad" placeholder="Ej: Londres">
+            <button onclick="obtenerClima()">Buscar Clima</button>
+        </section>
+
+        <section id="resultado-clima" class="resultados-api">
+            <h3>Resultados para: <span id="nombre-ciudad"></span></h3>
+            <p><strong>Temperatura:</strong> <span id="temp"></span></p>
+            <p><strong>Humedad:</strong> <span id="humedad"></span></p>
+            <p><strong>Descripción:</strong> <span id="descripcion-clima"></span></p>
+        </section>
+    </main>
+    
+    <script src="/js/clima.js"></script>
+</body>
+</html>
